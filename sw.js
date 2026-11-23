@@ -1,5 +1,5 @@
 /* Offline: alle Dateien beim ersten Besuch speichern, danach zuerst aus dem Speicher laden. */
-const V = 'epplh-2026.11.22-1415';
+const V = 'epplh-2026.11.23-0858';
 const FILES = ["./", "index.html", "app.css", "app.js", "data.js", "manifest.webmanifest", "icon-192.png", "icon-512.png", "icon-maskable.png", "img.js"];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(V).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
